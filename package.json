@@ -1,0 +1,38 @@
+{
+  "name": "wasm_gold_rush",
+  "version": "1.0.0",
+  "description": "wasm gold rush game",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prettier-format": "prettier --config .prettierrc 'ts/**/*.ts' --write",
+    "lint": "eslint . --ext .ts",
+    "build": "rimraf dist pkg && webpack",
+    "start": "rimraf dist pkg && webpack-dev-server --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imbenrabi/wasm_gold_rush.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/imbenrabi/wasm_gold_rush/issues"
+  },
+  "homepage": "https://github.com/imbenrabi/wasm_gold_rush#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.11.0",
+    "@typescript-eslint/parser": "^5.11.0",
+    "@wasm-tool/wasm-pack-plugin": "^1.6.0",
+    "eslint": "^8.8.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "html-webpack-plugin": "^5.5.0",
+    "prettier": "^2.5.1",
+    "ts-loader": "^9.2.6",
+    "typescript": "^4.5.5",
+    "webpack": "^5.68.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4"
+  }
+}
